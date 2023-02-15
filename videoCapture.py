@@ -23,7 +23,7 @@ while True:
 
     # Draw a rectangle around the faces, and show me handsum mens obviously
     for (x, y, w, h) in faces:
-        cv2.rectangle(frame, (x + 5, y + 5), (x+w, y+h), (0, 255, 0), 2)
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         cv2.putText(frame, 'handsome man', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 2)
 
     cv2.imshow('Video', frame)
